@@ -165,9 +165,12 @@ public class RunKelheimScenario extends MATSimApplication {
 
 		SnzActivities.addScoringParams(config);
 
-		config.controller().setOutputDirectory(sample.adjustName(config.controller().getOutputDirectory()));
+		//config.controller().setOutputDirectory(sample.adjustName(config.controller().getOutputDirectory()));
 		config.plans().setInputFile(sample.adjustName(config.plans().getInputFile()));
-		config.controller().setRunId(sample.adjustName(config.controller().getRunId()));
+		//config.controller().setRunId(sample.adjustName(config.controller().getRunId()));
+        config.controller().setRunId("base-scenario-hw");
+		config.controller().setLastIteration(50);
+		config.controller().setOutputDirectory("output/base_scenario");
 
 		config.qsim().setFlowCapFactor(sample.getSize() / 100.0);
 		config.qsim().setStorageCapFactor(sample.getSize() / 100.0);
