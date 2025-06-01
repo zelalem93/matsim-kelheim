@@ -6,7 +6,7 @@ import org.matsim.core.network.io.MatsimNetworkReader;
 import org.matsim.core.network.io.NetworkWriter;
 import org.matsim.core.utils.geometry.CoordUtils;
 
-import java.util.Collections;
+
 import java.util.List;
 import java.util.Set;
 
